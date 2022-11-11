@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+
+
+.titles_news_list, .news_list {
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.titles_news_list {
   display: flex;
-  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title_item:not(:first-child) {
+  margin-left: 10px;
+ 
+}
+
+.link_title_news{
+  color: #7FC7FF;
+}
+
+.news_img {
+  width: 20px;
+  height: 20px;
+}
+
+.news_item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-field {
+  box-sizing: border-box;
+  border: 1px solid yellow;
+  height: 30px;
+  width: 500px;
+  background-color: #f4f7f6; 
+ }
+
+ .button-search::before {
+  content:"";
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  line-height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-search {
+  position: relative;
+  width: 70px;
+  height: 30px;
+  border: none;
+  margin: 0;
+  background-color: yellow;
+}
+
+.search-group {
+  display: flex;
+  align-items: center;
+}
+
+.img_search-group {
+  height: 40px;
+  width: 70px;
+}
+
+.billboard_image {
+  position: relative;
+  width: 400px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 65px;
+}
+
+.billboard_text {
+  position: absolute;
+}
+
+.weather_icon {
+  width: 30px;
+  height: 30px;
+}
+.icon_text_weather {
+  display: flex;
+}
+.article_category{
+  display: flex;
+}
+.category {
+  font-weight: bold;
+}
+
+.widgets {
+  display: flex;
+}
+
+.popular_container, .tv_container, .broadcast_container {
+  margin-left: 15px;
 }
